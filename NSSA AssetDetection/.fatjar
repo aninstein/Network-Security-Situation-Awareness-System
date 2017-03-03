@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sun May 29 22:58:48 CST 2016
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=C\:\\Users\\64473\\Desktop\\\u65B0\u5EFA\u6587\u4EF6\u5939\\NSSA AssetDetection\\NSSA AssetDetection_fat.jar
+manifest.mergeall=true
+manifest.mainclass=nssa.ad.gui.MainForm
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=

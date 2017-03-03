@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <title>安全势态感知系统修改密码</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<meta name="author" content="ResponsiveWebInc">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600' rel='stylesheet' type='text/css'>	 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+		
+    <!-- CSS
+  ================================================== -->
+        <!-- admininfo CSS -->
+        <link rel="stylesheet" type="text/css" href="css/admininfo.css"></link>
+        <!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">	
+		<!-- Animate CSS -->
+		<link href="css/animate.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="outer">
+		
+			<!-- Sidebar Start-->
+			<!-- Menu for tablets and mobile -->
+			<div class="navigation">
+				<a href="#">Menu</a>
+			</div>
+			<div class="sidebar" style="position:fixed; top:0px; left:0px; z-index:10; width:auto; height:1080px;">
+				<!-- Logo of company -->
+				<div class="logo text-center">
+				<table>
+				<tr>
+					<td><img src="images/logo/logo-m-65.png"></td>
+					<td><h1><a href="#">NSSA</a></h1></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>欢迎登录安全势态感知！</p></td>
+				</tr>
+				</table>
+				</div>
+				<!--<div class="sidebar-search">
+					<form>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Text to search">
+							<span class="input-group-btn">
+								<button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
+							</span>
+						</div>
+					</form>
+				</div>-->
+				<!-- Navigation menu list -->
+				<ul class="list-unstyled list">
+					<li><a href="#home" class="anchorLink"><i class=" icon-cogs scolor"></i> 系统信息</a></li>
+					<li><a href="#.team" class="anchorLink"><i class=" icon-list-ol scolor"></i> 资产检测列表</a></li>
+					<li><a href="#.service" class="anchorLink"><i class="icon-desktop scolor"></i> 主机状态列表</a></li>
+					<li><a href="#.feature" class="anchorLink"><i class="icon-list  scolor"></i> 流量分析列表</a></li>
+					<li><a href="#.testimonial" class="anchorLink"><i class=" icon-signal scolor"></i> 流量分析图形</a></li>
+					<li><a href="#.ptable" class="anchorLink"><i class="icon-bar-chart  scolor"></i> 安全态势图形</a></li>
+					<li><a href="#.contact" class="anchorLink"><i class="icon-envelope scolor"></i> 安全势态评估</a></li>
+					<li class="dropdown">
+							<a data-toggle="dropdown" href="#"><i class="icon-user scolor"></i> 用户管理 <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" >
+								<li><a href="admininfo.html">修改密码</a></li>
+								<li><a href="logout.jsp">注销登录</a></li>
+								<!--<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>-->
+							</ul>
+					</li>
+				</ul>
+				<!-- Social media links -->
+				<div class="social">
+					<a href="#" class="facebook"><i class="icon-comments"></i></a>
+					<a href="#" class="twitter"><i class="icon-phone-sign"></i></a>
+					<a href="#" class="google"><i class="icon-envelope"></i></a>
+					<!--<a href="#" class="linkedin"><i class="icon-envelope"></i></a>-->
+				</div>
+			</div>
+			<!-- Sidebar End -->
+			
+			</div><!--This end div for outer class-->
+<br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="flat-form">
+            <ul class="tabs">
+            <!--
+                <li>
+                    <a href="#login" class="active">login</a>
+                </li>
+                <li>
+                    <a href="#register">Register</a>
+                </li>
+                <li>
+                    <a href="#reset">Reset Password</a>
+                </li>-->
+            </ul>
+            <div id="login" class="form-action show" align="center">
+                <p style="font-family:黑体; color:#FFFFFF; font-size:24px; font-weight:700" align="center">修改密码</p>
+                <p style="font-family:宋体; color:#929292; font-size:17px; font-weight:700" align="center">
+                   为了系统的安全，请您定期修改密码
+                </p>
+                <form name="form1" method="POST" action="modifypassword.jsp">
+                    <ul>
+                     <table>
+                        <tr>
+                        <td width="200" valign="middle" align="center"><p style="font-family:宋体; color:black; font-size:17px; font-weight:600;">请输入原密码</p></td>
+                        <td width="400">
+                        <li>
+                            <input type="password" placeholder="原密码" name="oldpassword"/>
+                        </li></td></tr>
+                        <tr>
+                        <td width="200" valign="middle" align="center"><p style="font-family:宋体; color:black; font-size:17px; font-weight:600;">请输入新密码</p></td>
+                        <td width="400"> 
+                        <li>
+                            <input type="password" placeholder="新密码建议8位字母数字结合" name="newpassword"/>
+                        </li>
+                        </td></tr>
+                        <tr>
+                        <td width="200" valign="middle" align="center"><p style="font-family:宋体; color:black; font-size:17px; font-weight:600;">请再次输入新密码</p></td>
+                        <td width="400">
+                        <li>
+                            <input type="password" placeholder="两次输入密码必须一致" name="newpassword2"/>
+                        </li>
+                        </td></tr></table>
+                        <table>
+                        <br>
+                        <tr>
+                        	<td width="200px"></td>
+                            <td width="200px"><input type="submit" value="保存" class="button1" name="B1"/></td>
+                            <td width="200px"><a href="index.jsp"><input type="submit" value="取消" class="button2"/></a></td><!-- name="B12"-->
+                         </tr>
+                        </table>
+                    </ul>
+                </form>
+            </div>
+            <!--/#login.form-action-->
+            <!--<div id="register" class="form-action hide">
+                <h1>Register</h1>
+                <p>
+                    You should totally sign up for our super awesome service.
+                    It's what all the cool kids are doing nowadays.
+                </p>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Username" />
+                        </li>
+                        <li>
+                            <input type="password" placeholder="Password" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Sign Up" class="button" />
+                        </li>
+                    </ul>
+                </form>
+            </div>-->
+            <!--/#register.form-action-->
+            <!--<div id="reset" class="form-action hide">
+                <h1>Reset Password</h1>
+                <p>
+                    To reset your password enter your email and your birthday
+                    and we'll send you a link to reset your password.
+                </p>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Email" />
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Birthday" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Send" class="button" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!--/#register.form-action-->
+        </div>
+    </div>
+    <script class="cssdeck" src="js/admininfo.js"></script>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="login-buttom-bg">
+      <tr>
+      <br><br><br><br><br><br><br><br>
+        <td align="center"><span class="login-buttom-txt" style="font-family:黑体; color:#979797; font-weight:900;">Copyright &copy; 2014 安全态势感知系统小组</span></td>
+      </tr>
+    </table>
+</body>
+</html>
+
+

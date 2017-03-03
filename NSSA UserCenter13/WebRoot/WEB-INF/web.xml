@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BarChartServletAll</servlet-name>
+    <servlet-class>nssa.uc.jfreechart.BarChartServletAll</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BarChartServletOne</servlet-name>
+    <servlet-class>nssa.uc.jfreechart.BarChartServletOne</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LineChartServlet</servlet-name>
+    <servlet-class>nssa.uc.jfreechart.LineChartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>aaa</servlet-name>
+    <servlet-class>nssa.uc.dao.aaa</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>BarChartServletAll</servlet-name>
+    <url-pattern>/servlet/BarChartServletAll</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BarChartServletOne</servlet-name>
+    <url-pattern>/servlet/BarChartServletOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LineChartServlet</servlet-name>
+    <url-pattern>/servlet/LineChartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>aaa</servlet-name>
+    <url-pattern>/servlet/aaa</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+</web-app>

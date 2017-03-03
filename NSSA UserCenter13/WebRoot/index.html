@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title here -->
+		<title>安全态势感知系统</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600' rel='stylesheet' type='text/css'>	 
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+		
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">	
+		<!-- Animate CSS -->
+		<link href="css/animate.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+		<style type="text/css">
+		body,td,th {
+	font-family: "Open Sans", sans-serif;
+}
+        </style>
+		<!-- 引入 echarts.js -->
+        <script src="js/echarts.min.js"></script>
+	</head>
+	
+	<body>
+		
+		<div class="outer">
+		
+			<!-- Sidebar Start-->
+			<!-- Menu for tablets and mobile -->
+			<div class="navigation" >
+				<a href="#">Menu</a>
+			</div>
+			<div class="sidebar" style="position:fixed; top:0px; left:0px; z-index:10; width:auto; height:1080px;">
+				<!-- Logo of company -->
+				<div class="logo text-center">
+				<table>
+				<tr>
+					<td><img src="images/logo/logo-m-65.png"></td>
+					<td><h1><a href="#">NSSA</a></h1></td>
+				</tr>
+				<tr>
+					<td colspan="2"><p>欢迎登录安全势态感知！</p></td>
+				</tr>
+				</table>
+				</div>
+				<!--<div class="sidebar-search">
+					<form>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Text to search">
+							<span class="input-group-btn">
+								<button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
+							</span>
+						</div>
+					</form>
+				</div>-->
+				<!-- Navigation menu list -->
+				<ul class="list-unstyled list">
+					<li><a href="#top" class="anchorLink"><i class=" icon-cogs scolor"></i> 系统信息</a></li>
+					<li><a href="#.team" class="anchorLink"><i class=" icon-list-ol scolor"></i> 资产检测列表</a></li>
+					<li><a href="#.service" class="anchorLink"><i class="icon-desktop scolor"></i> 主机状态列表</a></li>
+					<li><a href="#.feature" class="anchorLink"><i class="icon-list  scolor"></i> 流量分析列表</a></li>
+					<li><a href="#.testimonial" class="anchorLink"><i class=" icon-signal scolor"></i> 流量分析图形</a></li>
+					<li><a href="#.ptable" class="anchorLink"><i class="icon-bar-chart  scolor"></i> 安全态势图形</a></li>
+					<li><a href="#.contact" class="anchorLink"><i class=" icon-warning-sign scolor"></i> 安全势态评估</a></li>
+					<li class="dropdown">
+							<a data-toggle="dropdown" href="#"><i class="icon-user scolor"></i> 用户管理 <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" >
+								<li><a href="admininfo.html" target="main">修改密码</a></li>
+								<li><a href="logout.jsp" onclick="window.parent.location.href='logout.jsp'">注销登录</a></li>
+								<!--
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>
+								-->
+							</ul>
+					</li>
+				</ul>
+				<!-- Social media links -->
+				<div class="social">
+					<a href="#" class="facebook"><i class="icon-comments"></i></a>
+					<a href="#" class="twitter"><i class="icon-phone-sign"></i></a>
+					<a href="#" class="google"><i class="icon-envelope"></i></a>
+					<!--<a href="#" class="linkedin"><i class="icon-envelope"></i></a>-->
+				</div>
+			</div>
+			
+			<!-- Sidebar End -->
+			
+			<!-- Main Start -->
+			
+			<div class="main">
+			
+				<div id="carousel-example-generic" class="carousel slide carousel-fade">
+				   
+					<!--系统信息 start -->
+					
+					<div class="carousel-inner">
+						<!-- Carousel item start -->
+						<div class="item active">
+							<!-- Carousel background images -->
+							<img src="images/3.jpg" class="img-responsive" alt="" />
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-md-6">
+										<!-- Images for carousel foreground -->
+										<img src="images/s2.png" alt="" class="img-responsive" />
+									</div>
+									<div class="col-md-6">
+										<!-- Carousel caption -->
+										<div class="caption-content">
+											<h3>基本信息</h3>
+											<p>资产检测:&nbsp;检查网络中各个主机的硬件以及资产信息</p>
+											<p>主机扫描:&nbsp;通过网络扫描检查各主机的上线情况，端口开放情况等</p>
+											<p>流量分析:&nbsp;通过监听网络流量来检测入侵行为</p>
+											<p>数据融合:&nbsp;各传感器通过NSSA协议将信息发送给服务中心存储，服务中心里边嵌入了用户中心作为显示</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				  
+						<div class="item">
+							<img src="images/3.jpg"  class="img-responsive" alt=""/>
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-md-6">
+										<img src="images/s3.png" alt="" class="img-responsive" />
+									</div>
+									<div class="col-md-6">
+										<div class="caption-content">
+											<h3>功能说明</h3>
+											<p>本系统可以显示资产检测，主机扫描，流量分析等不同传感器发送来的的数据。</p>
+								            <p>本系统可以根据上述数据提取出网络资产，风险，威胁等信息，进而计算出网络安全态势值。</p>
+								            <p>本系统可以从宏观的角度在整体上把握网络安全的状态。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				  
+						<div class="item">
+							<img src="images/3.jpg"  class="img-responsive" alt=""/>
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-md-6">
+										<img src="images/s1.png" alt="" class="img-responsive" />
+									</div>
+									<div class="col-md-6">
+										<div class="caption-content">
+											<h3>运行环境</h3>
+											<p>操作系统：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不限，安装有JAVA环境即可</p>
+											<p>数据库：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mysql</p>
+											<p>传感器子系统：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java SE</p>
+											<p>服务中心子系统：&nbsp;Java SE（内嵌Java EE环境）</p>
+											<p>用户中心子系统：&nbsp;Java EE（嵌入在服务中心内）</p>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+				</div>
+				
+				<!-- 系统信息 End -->
+				
+				
+				
+				<div class="container">
+				
+					<!--版权信息 Start-->
+					
+					<div class="hero">
+						<div class="row">
+							<div class="col-md-12">
+								<h2>感谢您使用分层次网络安全态势感知系统!</h2>
+								<p style="color:red;">版权声明</p>
+								<p>本系统由天津理工大学计算机与通信工程学院王春东老师指导，安全态势感知系统小组开发。本系统仅提供使用，任何违反互联网规定的行为，自行负责！</p>
+								<p align="center"><span class="login-buttom-txt" style="font-family:黑体; color:#979797; font-weight:900;">
+								Copyright &copy; 2014 安全态势感知系统小组</span></p>
+							</div>
+						</div>
+					</div>
+					<hr />
+					<!--版权信息 End -->
+					
+					<!-- Start team profile -->
+					<div class="team">
+						<h3>About Us</h3>
+						<div class="bor hidden-xs"></div>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<!-- Team member's profile  -->
+								<div class="thumbnail team-profile">
+									<img src="img/user.jpg" alt="" class="img-responsive img-circle" />
+									<!-- Member's name and designation -->
+									<h5>John Smith</h5>
+									<span>Art Director</span>
+									<div class="social-link">
+										<a href="#" class="facebook"><i class="icon-facebook"></i></a>
+										<a href="#" class="google"><i class="icon-google-plus"></i></a>
+										<a href="#" class="twitter"><i class="icon-twitter"></i></a>
+										<a href="#" class="linkedin"><i class="icon-linkedin"></i></a>
+										<a href="#" class="skype"><i class="icon-skype"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail team-profile">
+									<img src="img/user.jpg" alt="" class="img-responsive img-circle" />
+									<h5>John Smith</h5>
+									<span>Art Director</span>
+									<div class="social-link">
+										<a href="#" class="facebook"><i class="icon-facebook"></i></a>
+										<a href="#" class="google"><i class="icon-google-plus"></i></a>
+										<a href="#" class="twitter"><i class="icon-twitter"></i></a>
+										<a href="#" class="linkedin"><i class="icon-linkedin"></i></a>
+										<a href="#" class="skype"><i class="icon-skype"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail team-profile">
+									<img src="img/user.jpg" alt="" class="img-responsive img-circle" />
+									<h5>John Smith</h5>
+									<span>Art Director</span>
+									<div class="social-link">
+										<a href="#" class="facebook"><i class="icon-facebook"></i></a>
+										<a href="#" class="google"><i class="icon-google-plus"></i></a>
+										<a href="#" class="twitter"><i class="icon-twitter"></i></a>
+										<a href="#" class="linkedin"><i class="icon-linkedin"></i></a>
+										<a href="#" class="skype"><i class="icon-skype"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail team-profile">
+									<img src="img/user.jpg" alt="" class="img-responsive img-circle" />
+									<h5>John Smith</h5>
+									<span>Art Director</span>
+									<div class="social-link">
+										<a href="#" class="facebook"><i class="icon-facebook"></i></a>
+										<a href="#" class="google"><i class="icon-google-plus"></i></a>
+										<a href="#" class="twitter"><i class="icon-twitter"></i></a>
+										<a href="#" class="linkedin"><i class="icon-linkedin"></i></a>
+										<a href="#" class="skype"><i class="icon-skype"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<hr />
+					
+					<!-- Team profile End --> 
+						
+					<!-- Services start -->
+					<div class="service">
+						<h3>Service</h3>
+						<div class="bor hidden-xs"></div>
+						<div class="row">
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<!-- Service item -->
+								<div class="service-item animated">
+									<i class="icon-camera skyblue"></i>
+									<!-- Service item heading -->
+									<h4><a href="#">Neque perspiciatis</a></h4>
+									<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia mollit anim id ests.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="service-item animated">
+									<i class="icon-envelope nblue"></i>
+									<h4><a href="#">Finibus perspiciatis</a></h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium totam remo.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="service-item animated">
+									<i class="icon-download blue"></i>
+									<h4><a href="#">Cicero perspiciatis</a></h4>
+									<p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself pain.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="service-item animated">
+									<i class="icon-gamepad green"></i>
+									<h4><a href="#">Malorum perspiciatis</a></h4>
+									<p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium itate none.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr />
+					<!-- Services End -->
+					
+					<!-- Features Start -->
+					
+					<div class="feature">
+						<h3>Feature</h3>
+						<div class="bor hidden-xs"></div>
+						<div class="row">
+							<div class="col-md-3 col-xs-6">
+								<!-- Feature item -->
+								<div class="feature-item animated">
+									<i class="icon-gears"></i>
+									<!-- Feature item heading and description -->
+									<h4>Similique Sunt Sin</h4>
+									<p>Circumstances occur in which toil him some great pleasure.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-xs-6">
+								<div class="feature-item animated">
+									<i class="icon-refresh"></i>
+									<h4>Harum Et Quidem</h4>
+									<p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-xs-6">
+								<div class="feature-item animated">
+									<i class="icon-unlink"></i>
+									<h4>Voluptatum Deleniti Atque </h4>
+									<p>Voluptates repudiandae sint et iae non recusandae.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-xs-6">
+								<div class="feature-item animated">
+									<i class="icon-puzzle-piece"></i>
+									<h4>Blinded By Desire</h4>
+									<p>Cases are perfectly simple and easy to distinguish.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr />
+					
+					<!-- Features End -->
+					
+					<!-- 流量分析柱状图 Start -->
+					
+					<div class="testimonial" style="z-index:10; height:1200px;">
+						<h3>流量分析柱状图</h3>
+						<div class="bor hidden-xs"></div>
+                        <br>
+                            <!-- 一天的柱状图的Dom -->
+                            <div id="echarts_bar_day" style="width: 800px;height:480px; float:left"></div>
+                            <!-- 饼状图的Dom -->
+                            <div id="piechart_a1" style="width: 640px;height:400px; float:left;"></div>	
+                            <div style="clear:both;"></div><!-- 清除float属性 -->
+                            <!-- 一周柱状图的Dom -->
+                            <div id="echarts_bar_week" style="width: 800px; height:530px; margin-top:40px; float:left;"></div>
+                           
+						
+						<script type="text/javascript" src="echarts/one_day_barchart.js"></script>	   
+						<script type="text/javascript" src="echarts/a_piecharst.js"></script>
+					   	<script type="text/javascript" src="echarts/a_week_barchart_heng.js"></script>
+					   
+				</div>
+				<hr />
+					
+					<!-- 流量分析柱状图 End -->
+					
+					<!-- 安全势态折线图 Start -->
+					
+					<div class="ptable" style="z-index:10; height:1300px;">
+						<h3>安全势态折线图</h3>
+                        <div class="bor hidden-xs"></div>
+                        <div style="width: 810px; height:1000px; float:left;">
+                            <!-- 一天的柱状图的Dom -->
+                            <div id="echarts_lin_day" style="width: 800px;height:530px;"></div>
+                            <!-- 一周柱状图的Dom -->
+                            <div id="echarts_lin_week" style="width: 800px; height:530px; margin-top:50px;"></div>
+                            <script type="text/javascript" src="echarts/one_day_linchart.js"></script>
+                            <script type="text/javascript" src="echarts/a_week_linchart.js"></script>
+                        </div>
+                        
+                        <!--四个仪表盘-->
+                        <table>
+                            <tr><td><div id="echarts_meter1" style="width:450px; height:300px; float:right;"></div></td></tr>
+                            <tr><td><div id="echarts_meter2" style="width:450px; height:300px; float:right;"></div></td></tr>
+                            <tr><td><div id="echarts_meter3" style="width:450px; height:300px; float:right;"></div></td></tr>
+                            <tr><td><div id="echarts_meter4" style="width:450px; height:300px; float:right;"></div></td></tr>
+                            </table>
+                            <script type="text/javascript" src="echarts/meter_for_linchart1.js"></script>
+                            <script type="text/javascript" src="echarts/meter_for_linchart2.js"></script>
+                            <script type="text/javascript" src="echarts/meter_for_linchart3.js"></script>
+                            <script type="text/javascript" src="echarts/meter_for_linchart4.js"></script>
+				<hr />
+					<!-- 安全势态折线图 End -->
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Contact Start -->
+					
+					<div class="contact">
+						<h3>Contact</h3>
+						<div class="bor hidden-xs"></div>
+						<div class="contact-details">
+							<!-- Contact form  -->
+							<h4>Contact Us</h4>
+							<form role="form" class="form">
+								<div class="form-group">
+									<!-- Name input box -->
+									<label for="exampleInputEmail1">Name</label>
+									<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+								</div>
+								<div class="form-group">
+									<!-- Email input box -->
+									<label for="exampleInputPassword1">Email</label>
+									<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter Email">
+								</div>
+								<div class="form-group">
+									<!-- Message input box -->
+									<label>Text Area</label>
+									<textarea class="form-control" rows="3"></textarea>
+								</div>
+								
+									<!-- Submit and reset button -->
+								<button type="submit" class="btn btn-default">Send</button>
+								<button type="reset" class="btn btn-default">Reset</button>
+							</form>
+							<!-- Address -->
+							<h5>Address</h5>
+							<p><span>Responsive Web, Inc.</span><br />
+								795 Folsom Ave, Suite 600<br />
+								San Francisco, CA 94107<br />
+								P: (123) 456-7890.</p>
+							<div class="c-social">
+								<a href=""><i class="icon-facebook"></i></a>
+								<a href=""><i class="icon-google-plus"></i></a>
+								<a href=""><i class="icon-twitter"></i></a>
+								<a href=""><i class="icon-linkedin"></i></a>
+							</div>
+						</div>
+						<!-- Google map to help locate the address -->
+						<div class="google-map">
+							<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/?ie=UTF8&amp;ll=12.953997,77.63094&amp;spn=0.815042,1.352692&amp;t=m&amp;z=10&amp;output=embed"></iframe>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					<!-- Contact End -->
+					
+					<!-- Footer -->
+				<footer>
+					<div class="row">
+						<div class="col-md-12">
+							<hr />
+							<br />
+							<!-- You should not remove the footer link back. -->
+							<p class="text-center">Copyright 2013 - <a href="#">Your Website</a> - Collect from <a href="#cssmoban.com">网页模板</a></p>
+							<br />
+						</div>
+					</div>
+				</footer>
+				
+				</div>
+				
+				
+				
+			</div>	<!-- This end div for main class -->
+		</div></div>
+		
+		<div class="clearfix"></div>
+		
+		
+		<!-- Scroll to top -->
+      <span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
+
+		
+		<!-- Javascript files -->
+		
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- jquery Anchor JS -->
+		<script src="js/jquery.arbitrary-anchor.js"></script>
+		<!-- jQuery way points -->
+		<script src="js/waypoints.min.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+	</body>	
+</html>
